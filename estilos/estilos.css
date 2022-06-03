@@ -1,0 +1,39 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: tomato;
+}
+body{
+    background-color: lightblue;
+}
+#logo-pokemon{
+    width: 20%;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+#logo-pokedex{
+    margin-top: 2em;
+}
+#login{
+    margin-top: 2em;
+}
+#usuario-invalido{
+    text-align: right;
+}
+#logueado{
+    margin-top: 2em;
+    margin-left: 3em;
+    margin-right: 4em;
+}
+#img-tabla{
+    width: 80px;
+}
+#contenedor-img-tabla{
+    text-align: center;
+}
+table, th, td {
+    border:1px solid black;
+  }
