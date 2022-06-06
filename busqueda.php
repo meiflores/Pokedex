@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!--ACA INCLUYO FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/33cfd1bfe2.js" crossorigin="anonymous"></script>
     <title>Pokedex</title>
 </head>
 
@@ -16,24 +18,23 @@
     <?php include('header.php') ?>
     <main>
 
-        <h2>¡Atrapalos ya!</h2>
-
         <?php
         //include('config.php');
         ?>
-
-        <form action="" method="post">
-            <input type="text" name="busqueda"><br>
-            <input type="submit" name="enviar" value="Buscar">
+        <div class="contenedorBusqueda">
+        <form action="" method="post" class="contenedorBusqueda">
+            <input type="text" name="busqueda" id="inputBusqueda" placeholder="Buscar..."><br>
+            <button type="submit" name="enviar" id="botonBusqueda"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
-
-        <div style="width:50%">
-            <button style="width:50%; padding-bottom:1em" class="w3-button w3-block w3-black"><a href="agregar.php">Agregar pokemon</a></button>
-            <div style="margin:1em"></div>
         </div>
 
-        <table style="width:100%">
-            <tr>
+        <!-- <div style="width:50%">
+            <button style="width:50%; padding-bottom:1em" class="w3-button w3-block w3-black"><a href="agregar.php">Agregar pokemon</a></button>
+            <div style="margin:1em"></div>
+        </div> -->
+
+        <table style="width:100%" id="tablaPokemones">
+            <tr id="tituloTabla">
                 <th>Imagen</th>
                 <th>Tipo</th>
                 <th>Número</th>
@@ -78,8 +79,8 @@
                     <td><?php echo $row['nombre'] ?></td>
                     <td>
 
-                        <button class="button button1"><a href="modificarPokemon.php?id=<?php echo $row['id'] ?>">Editar</a></button>
-                        <button class="button button2"><a href="eliminar.php?id=<?php echo $mostrar['id'] ?>">Eliminar</a></button>
+                        <a href="modificarPokemon.php?id=<?php echo $row['id'] ?>"><i class="fa-solid fa-pen-to-square icono"></i></a>
+                        <a href="eliminar.php?id=<?php echo $row['id'] ?>"><i class="fa-solid fa-trash icono"></i></a>
                     </td>
                 </tr>
             <?php
@@ -93,6 +94,13 @@
             ?>
 
         </table>
+
+        <!--FAB AGREGAR POKEMON-->
+        <a href="agregar.php">
+            <div id="agregarPokemon">    
+            <i class="fa-solid fa-plus"></i>
+            </div>
+            </a>
 
     </main>
     <footer>

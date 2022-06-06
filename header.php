@@ -1,13 +1,13 @@
 <header>
     <div class="flex-container">
         <div>
-            <img src="./img/Pokemon-logo.svg" alt="Logo Pokemon" width="200em">
+            <a href="home.php"><img src="./img/Pokemon-logo.svg" alt="Logo Pokemon" width="200em"></a>
         </div>
         <div>    
-            <img id="logo-pokedex" src="./img/pokedex-logo.png" alt="Logo Pokedex" width="200em">
+            <a href="home.php"><img id="logo-pokedex" src="./img/pokedex-logo.png" alt="Logo Pokedex" width="200em"></a>
         </div>
         <div>
-            <h3 id="logueado">USUARIO/A<br>LOGUEADO/A</h3>
+            <h3 id="logueado">USUARIX LOGUEADX</h3>
         </div>
     </div>    
 </header>

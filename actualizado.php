@@ -18,10 +18,10 @@
 
 <div style="width:50%">
 <h3>¿No querés agregar otro Pokemonito?</h3>
-  <button style="width:50%, padding-bottom:1em"><a href="agregar.php">¡Si!¡Quiero agregar otro Pokemonito!</a></button>
+  <button style="width:50%; padding-bottom:1em"><a href="agregar.php">¡Si!¡Quiero agregar otro Pokemonito!</a></button>
   <div style="margin:1em"></div>
 </div>
-  <button style="width:50%, padding-bottom:1em"><a href="home.php">No, quiero volver al home</a></button>
+  <button style="width:50%; padding-bottom:1em"><a href="home.php">No, quiero volver al home</a></button>
   <div style="margin:1em"></div>
 </div>
 

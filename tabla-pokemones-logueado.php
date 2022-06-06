@@ -15,8 +15,8 @@ while($mostrar=mysqli_fetch_array($resultado)){
     <td><?php echo $mostrar['nombre'] ?></td>
     <td>
 
-        <button class="button button1"><a href="modificarPokemon.php?id=<?php echo $mostrar['id']?>">Editar</a></button>
-        <button class="button button2"><a href="eliminar.php?id=<?php echo $mostrar['id']?>">Eliminar</a></button>
+    <a href="modificarPokemon.php?id=<?php echo $mostrar['id'] ?>"><i class="fa-solid fa-pen-to-square icono"></i></a>
+                        <a href="eliminar.php?id=<?php echo $mostrar['id'] ?>"><i class="fa-solid fa-trash icono"></i></a>
     </td>
 </tr>
 

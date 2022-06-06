@@ -10,8 +10,8 @@ $ruta=$ruta . "/" . $nombreimg;
 
 move_uploaded_file($archivo,$ruta);
 
-$query = mysqli_query($conexion, "INSERT INTO tabla_pokemones(nro, nombre, descripcion, img)
-                        VALUES ('$_REQUEST[nro]', '$_REQUEST[nombre]', '$_REQUEST[descripcion]', '".$ruta."')")
+$query = mysqli_query($conexion, "INSERT INTO tabla_pokemones(nro, nombre, descripcion, tipo, img)
+                        VALUES ('$_REQUEST[nro]', '$_REQUEST[nombre]', '$_REQUEST[descripcion]', '$_REQUEST[tipo]', '".$ruta."')")
                         or die("Problemas en el insert" . mysqli_error($conexion));
 
 mysqli_close($conexion);
